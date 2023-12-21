@@ -1,0 +1,58 @@
+/* .animal-card {
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: url('../icons/default-cursor.svg'), auto;
+}
+
+.animal-card:hover {
+  transform: scale(1.1);
+  cursor: url('../icons/hover-cursor.svg'), auto;
+} */
+
+.animal-card {
+  width: 100%;
+  max-width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: url('../icons/default-cursor.svg'), auto;
+  text-decoration: none; /* Remove default link styling */
+  color: inherit; /* Inherits text color from parent */
+}
+
+.animal-card:hover {
+  transform: scale(1.1);
+  cursor: url('../icons/hover-cursor.svg'), auto;
+}
+
+
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.clicked {
+  height: auto;
+}
+
+.card-details {
+  padding: 20px;
+  text-align: center;
+}
