@@ -1,0 +1,162 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.head{  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 5px;
+
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: last baseline;
+  padding: 10px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+
+body.dark-mode {
+  background-color: #121212 !important;
+  color: #fff !important;
+}
+
+.dark-mode-switch-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.slider:before {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #181818;
+  transition: transform 0.3s ease-in-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + .slider {
+  background-color: #f2f5f2;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(20px);
+}
+ 
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* Default background color */
+  color: #333; /* Default text color */
+  transition: background-color 0.4s, color 0.4s; /* Add transition for smooth color changes */
+}
+
+.app-container.dark {
+  background-color: #333; /* Dark gray background color when dark mode is active */
+  color: #fff; /* White text color when dark mode is active */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent; /* Makes the header background transparent */
+}
+
+
+
+/*  
+{
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; 
+  cursor: pointer;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: relative;
+  width: 60px;
+  height: 34px;
+  background-color: #ccc;
+  border-radius: 34px;
+  margin-left: 10px;
+  transition: background-color 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+} */

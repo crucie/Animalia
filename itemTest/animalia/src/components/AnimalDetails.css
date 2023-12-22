@@ -1,0 +1,53 @@
+/* Add these styles at the end of your existing CSS file */
+
+.animal-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Default background color for the container */
+  }
+  
+  .animal-details-card {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #fff; /* Default background color for the card */
+    color: #333; /* Default text color for the card */
+  }
+  
+  .back-button {
+    display: block;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .back-button:hover {
+    color: #555;
+  }
+  
+  /* Dark mode styles */
+  .app-container.dark .animal-details-container {
+    background-color: #333; /* Dark gray background color for the container when dark mode is active */
+  }
+  
+  .app-container.dark .animal-details-card {
+    background-color: #fff; /* White background color for the card when dark mode is active */
+    color: #333; /* Dark text color for the card when dark mode is active */
+  }
+  
+  .app-container.dark .back-button {
+    color: #272626; /* White text color for the back button when dark mode is active */
+  }
+  
+  .app-container.dark .back-button:hover {
+    color: #5f5f5f; /* Light gray text color for the back button on hover when dark mode is active */
+  }
+  
+  /* ... existing styles ... */
+  
